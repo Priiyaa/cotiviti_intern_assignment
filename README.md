@@ -1,4 +1,4 @@
-# Provider Payment Anomaly Review — Cotiviti Intern Assessment
+# Clinical Decision Making and Pattern Recognition in Health Care — Cotiviti Intern Assessment
 
 **Topic:** Clinical Decision Making and Pattern Recognition in Health Care
 **Focus areas demonstrated:** Time-Series Anomaly Detection, Classification, Clustering, Chain Reasoning, and Agentic Generative AI, applied to Treatment, Payment, and Operations (TPO) — specifically, provider payment integrity.
@@ -18,10 +18,11 @@ A working proof of concept that flags anomalous Medicare providers using two com
 
 All deliverables are uploaded directly to this repository as files — no external links (Google Drive, YouTube, etc.), per submission requirements.
 
-> **Note on video file size:** GitHub blocks regular pushes of files over 100MB, and the web upload UI caps at 25MB. If `Cotiviti_Demo.mp4` is large, compress it (e.g. `ffmpeg -i input.mp4 -vcodec libx264 -crf 28 output.mp4`) or use [Git LFS](https://git-lfs.com/) before pushing — otherwise the push will simply fail.
+---
+## Demo
+[🎥 Watch Demo](./Deliverables_and_Resume/Video/Demo_Video.mp4)
 
 ---
-
 ## Repository structure
 
 ```
@@ -159,8 +160,6 @@ Ten literature-standard provider-level features were ranked by Cohen's d effect 
 | **Agentic Generative AI** | Real tool-calling — the agent decides for itself whether to call `lookup_peer_benchmark` before answering, not a scripted call |
 
 ---
-## Demo
-[🎥 Watch Demo](./Deliverables_and_Resume/Video/Demo_Video.mp4)
 
 ## Source
 
