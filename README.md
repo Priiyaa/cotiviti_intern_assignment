@@ -73,9 +73,7 @@ All deliverables are uploaded directly to this repository as files — no extern
    export ANTHROPIC_API_KEY=your_key_here      # Mac/Linux
    set ANTHROPIC_API_KEY=your_key_here          # Windows cmd
    ```
-   Set this in the same terminal window you'll run the app from — it doesn't carry over between terminal sessions.
-
-All commands below are run from the **repository root** (not from inside `src/`), so that the relative paths to `data/`, `models/`, `clean_data/`, and `result/` resolve correctly.
+   Set this in the same terminal window you'll run the app from — it doesn't carry over between terminal sessions
 
 ---
 
@@ -99,10 +97,6 @@ This is the core step. It:
 - Tunes thresholds on validation (optimizing F2, with a precision floor so results stay operationally usable)
 - Reports final precision / recall / F1 / F2 / AUC-ROC / AUC-PR and a confusion matrix for **both models**, on the held-out test set — data neither model ever saw during fitting or tuning
 - Saves everything the app needs
-
-Re-run this any time you change the code, features, or data.
-
-> **Note:** the current output files in `clean_data/`, `image/`, and `result/` were generated when the scripts wrote directly to the repo root. If you re-run `eda.py` or `pipeline.py`, new output files will land in the root folder again, not automatically inside these subfolders — move them in afterward, or ask to have the scripts updated to write directly into the right folders.
 
 ### 3. Run the app
 ```
